@@ -4,11 +4,11 @@ import './Card.css'
 const Card = ({ weatherData}) => {
 
     if (!weatherData) {
-        return null; // Veri yokken hiçbir şey gösterme
+        return null; 
     }
 
     if (!weatherData.main) {
-        return <p>Yükleniyor..</p>; // Sadece veri yüklenirken göster
+        return <p>Yükleniyor..</p>; 
     }
    
     const tempInCelsius = Math.round(weatherData.main.temp - 273.15);
